@@ -824,12 +824,12 @@ def main(_):
                                     'testing', FLAGS.bottleneck_dir,
                                     FLAGS.image_dir, jpeg_data_tensor,
                                     bottleneck_tensor))
-  test_accuracy, predictions = sess.run(
-      [evaluation_step, prediction],
-      feed_dict={bottleneck_input: test_bottlenecks,
-                 ground_truth_input: test_ground_truth})
-  print('Final test accuracy = %.1f%% (N=%d)' % (
-      test_accuracy * 100, len(test_bottlenecks)))
+  #test_accuracy, predictions = sess.run(
+  #    [evaluation_step, prediction],
+  #    feed_dict={bottleneck_input: test_bottlenecks,
+  #               ground_truth_input: test_ground_truth})
+  #print('Final test accuracy = %.1f%% (N=%d)' % (
+  #    test_accuracy * 100, len(test_bottlenecks)))
 
   if FLAGS.print_misclassified_test_images:
     print('=== MISCLASSIFIED TEST IMAGES ===')
