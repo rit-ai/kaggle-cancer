@@ -21,3 +21,27 @@ If you are running remotely then, redo ssh with following flag:
 ssh -L 16006:127.0.0.1:6006 user_name@my_server
 tensorboard --logdir /tmp/retrain_logs/
 Go to http://127.0.0.1:16006 to see the model performance. 
+
+
+
+Other flags : 
+--image_dir
+--output_graph
+--output_labels
+--summaries_dir
+--how_many_training_steps
+--learning_rate
+--testing_percentage
+--validation_percentage
+--eval_step_interval
+--train_batch_size
+--test_batch_size
+--validation_batch_size
+--print_misclassified_test_images
+--model_dir
+--bottleneck_dir
+--final_tensor_name
+--flip_left_right
+--random_crop
+--random_scale
+--random_brightness
